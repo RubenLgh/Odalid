@@ -27,12 +27,13 @@ void MaFENETRE::on_Connect_clicked(){
      MonLecteur.device = 0;
      status = OpenCOM(&MonLecteur);
      qDebug() << "OpenCOM" << status;
-     char version[40];
-     uint8_t serial[4];
-     char stackReader[20];
 
      status = Version(&MonLecteur);
-     ui->Affichage->setText(MonLecteur.version);
+     QString ip = MonLecteur.IPReader;
+     QString version = MonLecteur.version;
+     QString stack = MonLecteur.stack;
+     QString test = version+"\n"+ip+"\n"+stack;
+     ui->Affichage->setText(test);
      ui->Affichage->update();
 
 }
