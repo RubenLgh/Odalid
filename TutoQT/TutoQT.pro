@@ -13,6 +13,8 @@ SOURCES += \
     mafenetre.cpp
 
 HEADERS += \
+    MfErrNo.h \
+    ODALID.h \
     mafenetre.h
 
 FORMS += \
