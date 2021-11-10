@@ -20,7 +20,7 @@ HEADERS += \
 FORMS += \
     mafenetre.ui
 
-LIBS += -LC:\Users\Benjamin\Documents\TutoQT -lODALID_Education
+unix|win32: LIBS += -L$$PWD/./ -lODALID_Education
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

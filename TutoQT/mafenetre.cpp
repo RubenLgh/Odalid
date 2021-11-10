@@ -94,6 +94,14 @@ int MaFENETRE::card_read(BYTE sect_count)
     status = Mf_Classic_Read_Block(&MonLecteur, true, 10, nom_char, Auth_KeyA, 2);
     status = Mf_Classic_Read_Block(&MonLecteur, true, 9, prenom_char, Auth_KeyA, 2);
 
+    if(status != MI_OK){
+       status = LEDBuzzer(&MonLecteur, LED_RED_ON);
+    }else{
+        status = LEDBuzzer(&MonLecteur, BUZZER_ON);
+        Sleep(500);
+        status = LEDBuzzer(&MonLecteur, BUZZER_OFF);
+        status = LEDBuzzer(&MonLecteur, LED_GREEN_ON);
+    }
     ui->lineEdit_prenom_2->setText((char*)prenom_char);
     ui->lineEdit_nom_2->setText((char*)nom_char);
 
@@ -102,6 +110,7 @@ int MaFENETRE::card_read(BYTE sect_count)
 
 void MaFENETRE::on_Lire_clicked()
 {
+    status = LEDBuzzer(&MonLecteur, LED_YELLOW_ON);
     card_read(sect_count);
 }
 
