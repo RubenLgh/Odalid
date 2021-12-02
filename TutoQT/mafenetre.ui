@@ -13,214 +13,169 @@
   <property name="windowTitle">
    <string>MaFENETRE</string>
   </property>
-  <widget class="QPushButton" name="Connect">
+  <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>220</y>
-     <width>80</width>
-     <height>21</height>
+     <x>110</x>
+     <y>210</y>
+     <width>606</width>
+     <height>157</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Connect</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="Affichage">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>260</y>
-     <width>104</width>
-     <height>70</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Saisie">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>220</y>
-     <width>80</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Saisie</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Quitter">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>140</y>
-     <width>21</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>X</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Lire">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>220</y>
-     <width>80</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Lire</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>270</y>
-     <width>47</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Nom:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>310</y>
-     <width>47</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Prénom:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_nom">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>270</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_prenom">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>310</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>270</y>
-     <width>47</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Nom:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>310</y>
-     <width>47</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Prénom:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_nom_2">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>270</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_prenom_2">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>310</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Valeur">
-   <property name="geometry">
-    <rect>
-     <x>530</x>
-     <y>220</y>
-     <width>80</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Valeur</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_valeur">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>270</y>
-     <width>113</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="plus">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>300</y>
-     <width>16</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>+</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="moins">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>300</y>
-     <width>16</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>-</string>
-   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="4" column="4">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Prénom:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QPushButton" name="Valeur">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Valeur</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Nom:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="Quitter">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 0, 0);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Nom:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="Connect">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 170, 0);
+color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLineEdit" name="lineEdit_prenom"/>
+    </item>
+    <item row="4" column="6">
+     <widget class="QLineEdit" name="lineEdit_valeur"/>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="Saisie">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Saisie</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QTextEdit" name="Affichage"/>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Prénom:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QPushButton" name="Lire">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>Lire</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLineEdit" name="lineEdit_nom_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="lineEdit_nom"/>
+    </item>
+    <item row="4" column="5">
+     <widget class="QLineEdit" name="lineEdit_prenom_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="moins">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 98, 98);
+color: rgb(255, 255, 255);
+border-color: rgb(255, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="plus">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);
+color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
