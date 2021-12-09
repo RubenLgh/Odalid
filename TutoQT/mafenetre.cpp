@@ -111,6 +111,7 @@ void MaFENETRE::card_read(BYTE sect_count)
 
 void MaFENETRE::on_Lire_clicked()
 {
+    status = LEDBuzzer(&MonLecteur, LED_YELLOW_ON);
     card_read(sect_count);
 }
 
