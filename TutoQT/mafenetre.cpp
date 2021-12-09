@@ -78,7 +78,7 @@ void MaFENETRE::on_Quitter_clicked()
      qApp->quit();
 }
 
-int MaFENETRE::card_read(BYTE sect_count)
+void MaFENETRE::card_read(BYTE sect_count)
 {
     BYTE b1[2];
     BYTE b2[1];

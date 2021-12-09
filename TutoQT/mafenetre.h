@@ -35,7 +35,7 @@ private slots:
 
     void on_Quitter_clicked();
 
-    int card_read(BYTE sect_count);
+    void card_read(BYTE sect_count);
 
     void on_Lire_clicked();
 
